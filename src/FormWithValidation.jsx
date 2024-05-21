@@ -36,7 +36,7 @@ const FormWithValidation = () => {
             }`}
             id="name"
             type="text"
-            {...formik.getFieldProps('name')}
+            {...formik.getFieldProps('name')} // is a shorthand to spread all the necessary properties and event handlers for managing the state and validation of a form field into the input element.
           />
           {formik.touched.name && formik.errors.name ? (
             <p className="text-red-500 text-xs italic">{formik.errors.name}</p>
